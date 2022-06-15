@@ -1,4 +1,4 @@
-# Care&Cure
+# Hope&Heal
 This project is about the website which is made for the easy accessing of medical services by patients by adding some unique features to it
 
 # Azure Services used in the project
@@ -40,15 +40,17 @@ Following are benifits that makes to deploy chatbot using "Azure bot services":
 
 # Home page:
 
-![image](https://user-images.githubusercontent.com/89384425/173740447-407c051c-11af-445f-82d4-0c7702244798.png)
+![image](https://user-images.githubusercontent.com/89384425/173747461-c7262a0b-1909-4b01-b497-6fc072085e6b.png)
 
-![image](https://user-images.githubusercontent.com/89384425/173740487-eee4bec6-2e08-41e4-a9c6-811aa967c4e0.png)
+![image](https://user-images.githubusercontent.com/89384425/173747580-adb1c47e-d345-4e56-992f-4d587430e16c.png)
 
-![image](https://user-images.githubusercontent.com/89384425/173740519-871b13d6-2118-4797-a4de-62a3470879fc.png)
+![image](https://user-images.githubusercontent.com/89384425/173747689-b90536bf-ce5e-4651-917e-19aef994937f.png)
 
-![image](https://user-images.githubusercontent.com/89384425/173740613-18e18447-e4fb-4600-ab7e-9dded2dd3b0d.png)
+![image](https://user-images.githubusercontent.com/89384425/173747815-3192c275-1bed-4445-b74d-42096aaabfd3.png)
 
-![image](https://user-images.githubusercontent.com/89384425/173740649-fb1d9f63-5c8c-4ede-bc02-8ee723ed0362.png)
+![image](https://user-images.githubusercontent.com/89384425/173748062-aad5f4a7-bf83-490a-bd84-80eb27dbe29a.png)
+
+![image](https://user-images.githubusercontent.com/89384425/173748158-c0c332c4-1468-4795-8cfd-d5df3af0f31a.png)
 
 # Login Page:
 
