@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Appointment Booking</title>
+    
+	<link rel="stylesheet" href="css/appointment.css">
+</head>
+<body>
+
+<div class="book" id="book">
+
+    <h1 class="heading"> <span>book</span> now </h1>
+
+    <div class="row">
+
+        <div class="image">
+
+            <img src="images/app.gif" alt="">
+        </div>
+
+        <form action=""method="post">
+            
+            <h3>book appointment</h3>
+            <input type="text" placeholder="Name" name="name" class="box" required>
+            <input type="text" placeholder="Age" name="age" class="box" required>
+            <input type="text" placeholder="Gender" name="gender" class="box" required>
+            <input type="text" placeholder="Contact Number" name="contact" class="box" required>
+            <input type="email" placeholder="Email" name="email" class="box" required>
+            <input type="text" placeholder="Select a doctor " name="doctor" list="names" class="box">
+            <datalist id="names"><option value="Varahi-Pediatrician"><option value="Rajeswar-cardio vascular">
+                <option value="Sruthi-Neuro"><option value="Dikshith-Kidney"></datalist>
+            <input type="date" class="box" name="date" id = "date" required>
+          <button class="btn">Submit</button>
+        </form>
+
+    </div>
+
+</div>
+
+<script>
+    var date = new Date();
+    var tdate = date.getDate();
+    var month = date.getMonth()+1;
+    if(tdate<10){
+        tdate = '0' + date;
+    }
+    if(month<10){
+        month = '0'+month;
+    }
+    var year = date.getUTCFullYear();
+    var minDate = year + "-" + month + "-" + tdate;
+    document.getElementById("date").setAttribute('min',minDate)
+    console.log(minDate)
+
+
+
+</script>
+
+</body>
+</html>

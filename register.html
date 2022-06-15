@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+        <script>
+
+            // Function to check Whether both passwords
+            // is same or not.
+            function checkPassword(form) {
+                pwd = form.pwd.value;
+                rpwd = form.rpwd.value;
+
+                // If password not entered
+                if (pwd == '')
+                    alert ("Please enter Password");
+
+                // If confirm password not entered
+                else if (rpwd == '')
+                    alert ("Please enter confirm password");
+
+
+                else if (pwd != rpwd) {
+                    alert ("\nPassword did not match: Please try again...")
+                    return false;
+                }
+
+
+                else{
+                    alert("Password Match: Welcome to MedHelp!")
+                    return true;
+                }
+            }
+        </script>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registration Form</title>
+    
+	<link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+
+<form action=""method="post" onSubmit = "return checkPassword(this)">
+    
+<div class="wrapper">
+    <div class="title">
+      Registration Form
+    </div>
+
+    <div class="form">
+       <div class="inputfield">
+          <label>UserName</label>
+          <input type="text" class="input" name="username" pattern=".{4,16}" title="4 or more Character" pattern="[!@#$%^&*][a-z][A-Z][0-9]" required>
+       </div>
+       <div class="inputfield">
+          <label>Password</label>
+          <input type="password" class="input" name="pwd" pattern=".{8,16}" title="8 or more Character" pattern="[!@#$%^&*][a-z][A-Z][0-9]" required>
+       </div>
+      <div class="inputfield">
+          <label>Confirm Password</label>
+          <input type="password" class="input" name="rpwd" pattern=".{8,16}" title="8 or more Character" pattern="[!@#$%^&*][a-z][A-Z][0-9]" required>
+       </div>
+        <div class="inputfield">
+          <label>Email Address</label>
+          <input type="email" class="input" name="email" title="email (format: xxx@xxx.xxx)"
+    pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" required>
+       </div>
+      <div class="inputfield">
+          <label>Phone Number</label>
+          <input type="tel" class="input" name="phone" pattern="[0-9]{10}" required>
+       </div>
+      <div class="inputfield terms">
+          <label class="check">
+            <input type="checkbox" required>
+            <span class="checkmark"></span>
+          </label>
+          <p>Agreed to terms and conditions</p>
+       </div>
+      <div class="inputfield">
+        <input type="submit" value="Register" class="btn">
+      </div>
+      Already a user?? <a href="login.html">Login</a> here
+    </div>
+</form>
+</div>
+
+</body>
+</html>

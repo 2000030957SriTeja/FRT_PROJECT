@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        :root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --varyDarkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --veryLightGray: hsl(0, 0%, 98%);
+    --weight1: 200;
+    --weight2: 400;
+    --weight3: 600;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--veryLightGray);
+}
+
+.attribution {
+    font-size: 11px; text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+h1:first-of-type {
+    font-weight: var(--weight1);
+    color: var(--varyDarkBlue);
+
+}
+
+h1:last-of-type {
+    color: var(--varyDarkBlue);
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.header {
+    text-align: center;
+    line-height: 0.8;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+.header p {
+    margin: 0 auto;
+    line-height: 2;
+    color: var(--grayishBlue);
+}
+
+
+.box p {
+    color: var(--grayishBlue);
+}
+
+.box {
+    border-radius: 5px;
+    box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+    padding: 30px;
+    margin: 20px;
+}
+
+img {
+    float: right;
+}
+
+@media (max-width: 450px) {
+    .box {
+        height: 200px;
+    }
+}
+
+@media (max-width: 950px) and (min-width: 450px) {
+    .box {
+        text-align: center;
+        height: 180px;
+    }
+}
+
+.cyan {
+    border-top: 20px solid var(--cyan);
+}
+.red {
+    border-top: 20px solid var(--red);
+}
+.blue {
+    border-top: 20px solid var(--blue);
+}
+.orange {
+    border-top: 20px solid var(--orange);
+}
+
+h2 {
+    color: var(--varyDarkBlue);
+    font-weight: var(--weight3);
+}
+
+
+@media (min-width: 950px) {
+    .row1-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row2-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box-down {
+        position: relative;
+        top: 150px;
+    }
+    .box {
+        width: 20%;
+
+    }
+    .header p {
+        width: 30%;
+    }
+
+}
+    </style>
+    <meta charset="UTF-8">
+    <title>HEART DISEASES</title>
+</head>
+<body >
+<div>
+    <br>
+</div>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<div class="row1-container">
+
+    <div class="box box-down cyan">
+        <a href="heart1.html">
+      <h2 align="center">Coronary artery bypass grafting</h2>
+            </a>
+    </div>
+
+    <div class="box red">
+        <a href="heart2.html">
+      <h2 align="center">Heart valve repair or replacement </h2>
+        </a>
+    </div>
+    <div class="box box-down blue">
+        <a href="heart3.html">
+      <h2 align="center">Heart transplant </h2>
+        </a>
+    </div>
+  </div>
+<div>
+    <br><br><br><br><br><br>
+</div>
+  <div class="row2-container">
+    <div class="box orange">
+        <a href="heart4.html">
+      <h2 align="center">Insertion of a pacemaker or an implantable cardioverter defibrillator </h2>
+        </a>
+
+    </div>
+  </div>
+</body>
+</html>

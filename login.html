@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login Form</title>
+   
+	<link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+
+<form action="index.html"method="post">
+  
+<div class="wrapper">
+    <div class="title">
+      Login Form
+    </div>
+    <div class="form">
+       <div class="inputfield">
+          <label>UserName</label>
+          <input type="text" class="input" name="user" pattern=".{4,16}" title="4 or more Character" pattern="[!@#$%^&*][a-z][A-Z][0-9]" required>
+       </div>
+       <div class="inputfield">
+          <label>Password</label>
+          <input type="password" class="input" name="pwd" pattern=".{8,16}" title="8 or more Character" pattern="[!@#$%^&*][a-z][A-Z][0-9]" required>
+       </div>
+      <div class="inputfield">
+
+        <input type="submit" value="Login" class="btn" id = "demo">
+
+      </div>
+     Dont have an account???<a href="register.html">Register</a> here
+        <br>
+        <br>
+        
+    </div>
+    </form>
+</div>
+
+</body>
+</html>
